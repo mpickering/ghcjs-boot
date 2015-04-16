@@ -45,7 +45,7 @@ index 5bb17e2..549aaad 100644
 +                appendFile tmp "\n#endif\n"
 +                maybeUpdateFile tmp out
 +              primops = joinPath ["..", "..", "data", "primops-js.txt"]
-+              primops_native = joinPath ["..", "..", "data", "primops-native.txt"]
++              primops_native = joinPath ["..", "..", "data", "primops.txt"]
                primhs = joinPath ["GHC", "Prim.hs"]
                primopwrappers = joinPath ["GHC", "PrimopWrappers.hs"]
                primhs_tmp = addExtension primhs "tmp"

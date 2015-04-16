@@ -44,7 +44,7 @@ index 5bb17e2..549aaad 100644
 +                maybeExit $ system (genprimopcode ++ options ++ " < " ++ primops_native ++ " >> " ++ tmp)
 +                appendFile tmp "\n#endif\n"
 +                maybeUpdateFile tmp out
-+              primops = joinPath ["..", "..", "data", "primops-js.txt"]
++              primops = joinPath ["..", "..", "data", "primops.txt"]
 +              primops_native = joinPath ["..", "..", "data", "primops-native.txt"]
                primhs = joinPath ["GHC", "Prim.hs"]
                primopwrappers = joinPath ["GHC", "PrimopWrappers.hs"]
